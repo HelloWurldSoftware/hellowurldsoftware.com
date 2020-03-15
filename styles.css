@@ -1,0 +1,51 @@
+*{
+    font-family: Verdana;
+    margin: 0px;
+}
+
+body{
+    background: #eee;
+}
+
+nav{
+    background: #556778;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover{
+    background: rgba(255,255,255,0.2);
+}
+
+nav li{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul{
+    padding: 0px;
+}
+
+/* flex styles */
+
+@media screen and (min-width: 768px){
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    nav ul{
+        display: flex;
+    }
+
+    nav li{
+        flex: 1 1 0;
+    }
+
+}
